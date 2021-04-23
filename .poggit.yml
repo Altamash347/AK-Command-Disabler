@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Altamash347/AK-Command-Disabler
+build-by-default: true
+branches:
+- main
+projects:
+  AK-Command-Disabler:
+    path: ""
+...
