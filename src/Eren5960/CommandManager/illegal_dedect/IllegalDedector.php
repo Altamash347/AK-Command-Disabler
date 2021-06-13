@@ -58,7 +58,7 @@ class IllegalDedector{
             $version = yaml_parse($content)["version"];
             return floatval($version) > floatval($current_version);
         }else{
-            $this->plugin->getLogger()->alert(substr($err, 0, 9) === "Could not" ? "You haven't internet connection for check CommandManager version." : $error);
+            $this->plugin->getLogger()->alert(substr($err, 0, 9) === "Could not" ? "You haven't internet connection for check CommandManager version." : $err);
             return false;
         }
     }
